@@ -1,0 +1,204 @@
+/* Neue Haas Grotesk Display Pro 45 Light
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Display Pro 46 Light Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: italic;
+Neue Haas Grotesk Display Pro 55 Roman
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 500;
+font-style: normal;
+Neue Haas Grotesk Display Pro 75 Bold
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Display Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: italic;
+Neue Haas Grotesk Text Pro 55 Roman
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Text Pro 56 Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: italic;
+Neue Haas Grotesk Text Pro 75 Bold
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Text Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: italic; 
+
+
+Degular Mono Regular
+font-family: "degular-mono", sans-serif;
+font-weight: 400;
+font-style: normal;
+Degular Mono Italic
+font-family: "degular-mono", sans-serif;
+font-weight: 400;
+font-style: italic;
+Degular Mono Bold
+font-family: "degular-mono", sans-serif;
+font-weight: 700;
+font-style: normal;
+Degular Mono Bold Italic
+font-family: "degular-mono", sans-serif;
+font-weight: 700;
+font-style: italic;*/
+
+body {
+    background-image: url('images/background-min.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    margin: 12em;
+}
+
+h1 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    color: #070707;
+    opacity: 90%;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    color: #070707;
+}
+
+h3 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #070707;
+    font-size: 2em;
+}
+
+p {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.textcolumns01 {
+    column-count: 2;
+    column-gap: 2em;
+    margin-top: 5em;
+}
+
+.textcolumns02 {
+    column-count: 2;
+    column-gap: 2em;
+}
+
+.textcolumns02 a{
+    line-height: 1.25em;
+    text-decoration: none;
+    color: #070707;
+}
+
+.textcolumns02 a:hover{
+    text-decoration: underline;
+}
+
+.end {
+    margin-bottom: 5em;
+    margin-top: 3em;
+    color: #070707;
+    font-size: 24px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#divide {
+    border: 1px solid #070707;
+    margin-top: 5em;
+}
+
+#message {
+    color: #070707;
+    font-family: "degular-mono", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5em;
+    padding-bottom: 5em;
+}
+
+#caption {
+    color: #070707;
+    font-family: "degular-mono", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#ack a {
+    color: #070707;
+    font-family: "degular-mono", sans-serif;
+    font-weight: 400;
+}
+
+#img01 {
+    display: block;
+    padding-top: 5em;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+
+    .textcolumns01 {
+        column-count: 1;
+        column-gap: 2em;
+        margin-top: 5em;
+    }
+
+     .textcolumns02 {
+        column-count: 1;
+        column-gap: 2em;
+        margin-top: 5em;
+    }
+
+    .description {
+        display: block;
+        margin-top: 3em;
+    }
+
+      body {
+        background-image: none;
+        height: 100vh;
+        margin: 7em;
+    }
+
+  }
+
+  @media (max-width: 450px) {
+
+    body {
+        background-image: none;
+        height: 100vh;
+        margin: 7em;
+    }
+
+  }
