@@ -1,199 +1,185 @@
-/* Neue Haas Grotesk Display Pro 45 Light
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 400;
-font-style: normal;
-Neue Haas Grotesk Display Pro 46 Light Italic
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 400;
-font-style: italic;
-Neue Haas Grotesk Display Pro 55 Roman
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 500;
-font-style: normal;
-Neue Haas Grotesk Display Pro 75 Bold
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 700;
-font-style: normal;
-Neue Haas Grotesk Display Pro 76 Bold Italic
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 700;
-font-style: italic;
-Neue Haas Grotesk Text Pro 55 Roman
-font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-Neue Haas Grotesk Text Pro 56 Italic
-font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 400;
-font-style: italic;
-Neue Haas Grotesk Text Pro 75 Bold
-font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 700;
-font-style: normal;
-Neue Haas Grotesk Text Pro 76 Bold Italic
-font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 700;
-font-style: italic; 
-
-
-Degular Mono Regular
-font-family: "degular-mono", sans-serif;
-font-weight: 400;
-font-style: normal;
-Degular Mono Italic
-font-family: "degular-mono", sans-serif;
-font-weight: 400;
-font-style: italic;
-Degular Mono Bold
-font-family: "degular-mono", sans-serif;
-font-weight: 700;
-font-style: normal;
-Degular Mono Bold Italic
-font-family: "degular-mono", sans-serif;
-font-weight: 700;
-font-style: italic;*/
+/*style
+    border-radius: 80px;
+    background: #4F1198;
+    box-shadow: 0 0 3px 3px #B68EDF;
+    color: #FCFCF6;
+    text-align: center;
+    font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+*/
 
 body {
-    background-image: url('images/background-min.png');
+    background-image: url('images/backgroundimage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
-    margin: 12em;
+    margin: 0;
 }
 
-h1 {
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3em;
-    color: #070707;
-    opacity: 90%;
+.heading-img {
+    width: 100vw;
+    height: 138vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+
+
+
+nav ul {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(5, auto);
+}
+
+nav ul li {
+    padding: 0.2em;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style-type: none;
+
+}
+
+
+nav ul li a {
+    width: 12em;
+    padding: 0.75em 0.25em;
+    align-items: center;
+    border-radius: 80px;
+    background: #B68EDF;
+    color: #FCFCF6;
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
 }
 
-h2 {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
-    color: #070707;
+nav ul li a:hover {
+    border-radius: 80px;
+    background: #4F1198;
+    box-shadow: 0 0 3px 3px #B68EDF;
 }
 
-h3 {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    color: #070707;
-    font-size: 2em;
+nav ul li a.active {
+    border-radius: 80px;
+    background: #4F1198;
+    box-shadow: 0 0 3px 3px #B68EDF;
+}
+
+#What {
+    color: #9DE018;
+    font-family: HARBER-trial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 9;
+    line-height: normal;
+    text-align: center;
+    margin-top: 18em;
+    margin-bottom: 1em;
+}
+
+#Where {
+     color: #9DE018;
+    font-family: HARBER-trial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 9;
+    line-height: normal;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#Workshop {
+      color: #9DE018;
+    font-family: HARBER-trial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 9;
+    line-height: normal;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 p {
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    font-weight: 400;
+    font-family: "ABC Favorit Variable Unlicensed Trial";
+    font-weight: 350;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.75em;
     line-height: 1.3;
+    text-align: center;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 2.5em;
 }
 
-.textcolumns01 {
-    column-count: 2;
-    column-gap: 2em;
-    margin-top: 5em;
-}
-
-.textcolumns02 {
-    column-count: 2;
-    column-gap: 2em;
-}
-
-.textcolumns02 a{
-    line-height: 1.25em;
-    text-decoration: none;
-    color: #070707;
-}
-
-.textcolumns02 a:hover{
-    text-decoration: underline;
-}
-
-.end {
-    margin-bottom: 5em;
-    margin-top: 3em;
-    color: #070707;
-    font-size: 24px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 400;
+.mid {
+    font-family: "ABC Favorit Variable Unlicensed Trial";
+    font-weight: 350;
     font-style: normal;
+    font-size: 1.25em;
+    line-height: 1.3;
+    text-align: left;
+    margin-left: 8em;
+    margin-right: 8em;
 }
 
-#divide {
-    border: 1px solid #070707;
-    margin-top: 5em;
+#container{
+    font-family: "ABC Favorit Variable Unlicensed Trial";
+    font-weight: 350;
+    font-style: normal;
+    font-size: 1.25em;
+    line-height: 1.3;
+    text-align: left;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+#floated{
+    float: RIGHT;
 }
 
-#message {
-    color: #070707;
-    font-family: "degular-mono", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-top: 5em;
-    padding-bottom: 5em;
+#floated img {
+    max-width: 25em;
+    margin-left : 2em;
+    margin-bottom: 2em;
 }
 
-#caption {
-    color: #070707;
-    font-family: "degular-mono", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-top: 1em;
+.containdiagram {
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
-#ack a {
-    color: #070707;
-    font-family: "degular-mono", sans-serif;
-    font-weight: 400;
+.diagram {
+    width: 100%;    
 }
 
-#img01 {
-    display: block;
-    padding-top: 5em;
-    margin: auto;
-    width: 100%;
-    height: auto;
-}
 
 @media (max-width: 900px) {
 
-    .textcolumns01 {
-        column-count: 1;
-        column-gap: 2em;
-        margin-top: 5em;
-    }
-
-     .textcolumns02 {
-        column-count: 1;
-        column-gap: 2em;
-        margin-top: 5em;
-    }
-
-    .description {
-        display: block;
-        margin-top: 3em;
-    }
-
-      body {
-        background-image: none;
-        height: 100vh;
-        margin: 7em;
-    }
-
-  }
-
-  @media (max-width: 450px) {
 
     body {
         background-image: none;
@@ -201,4 +187,14 @@ p {
         margin: 7em;
     }
 
-  }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-image: none;
+        height: 100vh;
+        margin: 7em;
+    }
+
+}
