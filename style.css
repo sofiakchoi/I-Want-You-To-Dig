@@ -1,16 +1,24 @@
-/*style
-    border-radius: 80px;
-    background: #4F1198;
-    box-shadow: 0 0 3px 3px #B68EDF;
-    color: #FCFCF6;
-    text-align: center;
-    font-family: "ABC Favorit Mono Variable Unlicensed Trial";
-    font-size: 1.1em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration: none;
-*/
+@font-face{
+font-family: "HARBER-trial";
+src: url('HARBER-trial-Light.woff'), format('woff');
+font-weight: 9;
+font-style: normal;}
+@font-face{
+font-family: "HARBER-trial";
+src: url('HARBER-trial-Regular.woff'), format('woff');
+font-weight: 10;
+font-style: normal;}
+
+@font-face{
+font-family: "ABC Favorit Variable Unlicensed Trial";
+src: url('ABCFavoritVariableEdu-Regular.woff'), format('woff');
+font-weight: 9;
+font-style: normal;}
+@font-face{
+font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+src: url('ABCFavoritMonoVariableEdu-Regular.woff'), format('woff');
+font-weight: 10;
+font-style: normal;}
 
 body {
     background-image: url('images/backgroundimage.png');
@@ -20,6 +28,30 @@ body {
     background-position: center;
     height: 100vh;
     margin: 0;
+}
+
+#popup01 {
+    margin-top: 5em;
+    border: 2px solid #88e018;
+    width: 100%;
+    overflow: scroll;
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px #88e018;
+}
+
+.popupheadline {
+    font-family: "ABC Favorit Variable Unlicensed Trial";
+    padding: 5px 10px 0px 10px;
+    color: #88e018;
+}
+
+.popupcontent {
+    padding:1.5em;
+}
+
+#popup01 hr {
+    border: 1px solid #88e018;
+    padding: 0;
 }
 
 .heading-img {
@@ -259,7 +291,7 @@ p {
     text-align: center;
     margin-left: 6em;
     margin-right: 6em;
-    margin-top: -1em;
+    margin-top: -2em;
     margin-bottom: 2.5em;
     justify-content: center;
 }
@@ -292,19 +324,61 @@ table, th, td {
 
 th {
 padding: 0.75em;
- color: #FCFCF6;
-
+ color: #88e018;
 }
 
 td {
 border: 1px solid #88e018;
 padding: 0.75em;
-background-color: #FCFCF6;
+background-color: transparent;
 font-family: "ABC Favorit Mono Variable Unlicensed Trial";
 }
+
+td a {
+    text-decoration: none;
+    color: #000000;
+}
+
+td a:hover {
+    text-decoration: none;
+    color: #88e018;
+}
+
 table {
     border: 1px solid #88e018;
-    background-color: #88e018;
+    background-color: transparent;
+    margin: 0.5em;
+    margin-bottom: 10em;
+}
+
+ol {
+    font-family: "ABC Favorit Variable Unlicensed Trial";
+    font-weight: 350;
+    font-style: normal;
+    font-size: 1.25em;
+    line-height: 1.3;
+    text-align: left;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+ol li{
+padding-top: 0.75em;
+}
+
+ol li ol {
+    margin-top: 0.5em;
+    padding-left: -6em;
+    margin-left: -0.5em;
+}
+
+ol li ol li{
+font-family: "ABC Favorit Variable Unlicensed Trial";
+font-weight: 700;
+font-size: 0.7em;
+padding-top: 0;
+
 }
 
 .library {
@@ -316,6 +390,50 @@ table {
     margin-bottom: 8em;
 }
 
+.click {
+    display: inline-block;
+    position: relative;
+    font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    font-size: 1em;
+    color: #FCFCF6;
+    background-color: #88e018;
+    text-decoration: none;
+    border-radius: 2em;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.click:hover {
+    border-radius: 80px;
+    background: #88e018; 
+    box-shadow: 0 0 3px 3px #9cff1ba5;
+}
+
+.click span::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 150%;
+    width: 100%;
+    text-align: center;
+}
+
+.click:hover .clickcontent {
+    animation: clickAnim 1.75s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
 
 @media (max-width: 900px) {
 
@@ -323,7 +441,7 @@ table {
     body {
         background-image: none;
         height: 100vh;
-        margin: 7em;
+        margin: 0.5em;
     }
 
 }
@@ -333,7 +451,7 @@ table {
     body {
         background-image: none;
         height: 100vh;
-        margin: 7em;
+        margin: 0.25em;
     }
 
 }
