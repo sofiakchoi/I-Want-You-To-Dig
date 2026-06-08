@@ -96,6 +96,16 @@ nav ul li {
 
 }
 
+.speciallink {
+    text-decoration: none;
+    color: #000000;
+}
+
+.speciallink:hover {
+    text-decoration: none;
+    color: #88e018;
+}
+
 
 nav ul li a {
     width: 12em;
@@ -125,8 +135,8 @@ nav ul li a.active {
     box-shadow: 0 0 3px 3px #B68EDF;
 }
 
-#MobileMessage{
-      color: #88e018;
+#MobileMessage {
+    color: #88e018;
     font-family: "ABC Favorit Mono Variable Unlicensed Trial";
     font-size: 1em;
     font-style: normal;
@@ -137,8 +147,8 @@ nav ul li a.active {
     display: none;
 }
 
-#SecretHead{
-     color: #88e018;
+#SecretHead {
+    color: #88e018;
     font-family: HARBER-trial;
     font-size: 4em;
     font-style: normal;
@@ -319,6 +329,14 @@ p {
     width: 100%;
 }
 
+.diagramsecret {
+    display: none;
+}
+
+.diagramhidden {
+    display: none;
+}
+
 .button {
     text-align: center;
     margin-left: 6em;
@@ -467,14 +485,625 @@ ol li ol li {
     }
 }
 
+@media (max-width: 950px) {
+ nav {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+
+    #popup01 {
+        margin-top: 2em;
+        border: 2px solid #88e018;
+        width: 100%;
+        overflow: scroll;
+        border-radius: 1rem;
+        box-shadow: 10px 5px 5px #88e018;
+    }
+
+    .popupheadline {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        padding: 5px 10px 0px 10px;
+        color: #88e018;
+    }
+
+    .popupcontent {
+        padding: 0.25em;
+    }
+
+    #popup01 hr {
+        border: 1px solid #88e018;
+        padding: 0;
+    }
+
+    #What {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 18.5em;
+        margin-bottom: 0.75em;
+    }
+
+    #prompt {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #library {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #Where {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #Workshop {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    p {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.4em;
+        line-height: 1.3;
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 2em;
+    }
+
+    .mid {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    #container {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #floatedright {
+        display: none;
+    }
+
+    #floatedleft {
+        display: none;
+    }
+
+    #floated {
+        display: none;
+    }
 
 
+    #containerleft {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
 
-@media (max-width: 450px) {
+    #containerright {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
 
-   #MobileMessage{
-    display: block;
+    .green {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+
+    .containdiagram {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .containdiagrampainting {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .diagram {
+        width: 100%;
+    }
+
+    
+
+    .button {
+        text-align: center;
+        margin-left: 6em;
+        margin-right: 6em;
+        margin-top: 0.5em;
+        margin-bottom: 2.5em;
+        justify-content: center;
+    }
+
+    .button a {
+        width: 12em;
+        padding: 0.75em 1.25em;
+        border-radius: 80px;
+        background: #88e018;
+        color: #FCFCF6;
+        text-align: center;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .button a:hover {
+        border-radius: 80px;
+        background: #88e018;
+        box-shadow: 0 0 3px 3px #9cff1ba5;
+    }
+
+
+    table, th, td {
+        border-collapse: collapse;
+        margin-bottom: 10em;
+        text-align: left;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    }
+
+    th {
+        padding: 0.75em;
+        color: #88e018;
+    }
+
+    td {
+        border: 1px solid #88e018;
+        padding: 0.75em;
+        background-color: transparent;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    }
+
+    td a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    td a:hover {
+        text-decoration: none;
+        color: #88e018;
+    }
+
+    table {
+        border: 1px solid #88e018;
+        background-color: transparent;
+        margin-right: 3em;
+        margin-left: 3em;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    ol {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    ol li {
+        padding-top: 0.75em;
+    }
+
+    ol li ol {
+        margin-top: 0.5em;
+        padding-left: -6em;
+        margin-left: -0.5em;
+    }
+
+    ol li ol li {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 700;
+        font-size: 0.8em;
+        padding-top: 0;
+
+    }
+
+    .library {
+        justify-content: center;
+        display: inline;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 2em;
+        margin-bottom: 10em;
+    }
 }
+
+
+@media (max-width: 1080px) {
+    nav {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+
+    #popup01 {
+        margin-top: 2em;
+        border: 2px solid #88e018;
+        width: 100%;
+        overflow: scroll;
+        border-radius: 1rem;
+        box-shadow: 10px 5px 5px #88e018;
+    }
+
+    .popupheadline {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        padding: 5px 10px 0px 10px;
+        color: #88e018;
+    }
+
+    .popupcontent {
+        padding: 0.25em;
+    }
+
+    #popup01 hr {
+        border: 1px solid #88e018;
+        padding: 0;
+    }
+
+    #What {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 18.5em;
+        margin-bottom: 0.75em;
+    }
+
+    #prompt {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #library {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #Where {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    #Workshop {
+        color: #88e018;
+        font-family: HARBER-trial;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 9;
+        line-height: normal;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0.75em;
+    }
+
+    p {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.4em;
+        line-height: 1.3;
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 2em;
+    }
+
+    .mid {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    #container {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #floatedright {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    #floatedleft {
+         margin-left: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+
+    #containerleft {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #containerright {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .green {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+
+    .containdiagram {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .containdiagrampainting {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .diagram {
+        width: 100%;
+    }
+
+    
+
+    .button {
+        text-align: center;
+        margin-left: 6em;
+        margin-right: 6em;
+        margin-top: 0.5em;
+        margin-bottom: 2.5em;
+        justify-content: center;
+    }
+
+    .button a {
+        width: 12em;
+        padding: 0.75em 1.25em;
+        border-radius: 80px;
+        background: #88e018;
+        color: #FCFCF6;
+        text-align: center;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .button a:hover {
+        border-radius: 80px;
+        background: #88e018;
+        box-shadow: 0 0 3px 3px #9cff1ba5;
+    }
+
+
+    table, th, td {
+        border-collapse: collapse;
+        margin-bottom: 10em;
+        text-align: left;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    }
+
+    th {
+        padding: 0.75em;
+        color: #88e018;
+    }
+
+    td {
+        border: 1px solid #88e018;
+        padding: 0.75em;
+        background-color: transparent;
+        font-family: "ABC Favorit Mono Variable Unlicensed Trial";
+    }
+
+    td a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    td a:hover {
+        text-decoration: none;
+        color: #88e018;
+    }
+
+    table {
+        border: 1px solid #88e018;
+        background-color: transparent;
+        margin-right: 3em;
+        margin-left: 3em;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    ol {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 350;
+        font-style: normal;
+        font-size: 1.15em;
+        line-height: 1.3;
+        text-align: left;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    ol li {
+        padding-top: 0.75em;
+    }
+
+    ol li ol {
+        margin-top: 0.5em;
+        padding-left: -6em;
+        margin-left: -0.5em;
+    }
+
+    ol li ol li {
+        font-family: "ABC Favorit Variable Unlicensed Trial";
+        font-weight: 700;
+        font-size: 0.8em;
+        padding-top: 0;
+
+    }
+
+    .library {
+        justify-content: center;
+        display: inline;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 2em;
+        margin-bottom: 10em;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    #MobileMessage {
+        display: block;
+    }
 
     #SecretHead {
         display: block;
@@ -511,7 +1140,7 @@ ol li ol li {
     }
 
     .heading-img {
-       display: none;
+        display: none;
     }
 
 
@@ -584,9 +1213,9 @@ ol li ol li {
 
     p {
         font-family: "ABC Favorit Variable Unlicensed Trial";
-        font-weight: 350;
+        font-weight: 500;
         font-style: normal;
-        font-size: 1.4em;
+        font-size: 1.15em;
         line-height: 1.3;
         text-align: center;
         margin-left: 1em;
@@ -621,11 +1250,11 @@ ol li ol li {
     #floatedright {
         width: 100;
     }
-    
+
     #floatedleft {
         width: 100;
     }
-    
+
 
     #containerleft {
         font-family: "ABC Favorit Variable Unlicensed Trial";
@@ -651,7 +1280,7 @@ ol li ol li {
         margin-top: 1.5em;
     }
 
-    .green{
+    .green {
         margin-top: 1em;
         margin-bottom: 1em;
         padding-bottom: 1em;
